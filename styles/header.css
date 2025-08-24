@@ -47,6 +47,7 @@
 
 .container_botao:checked ~ .lista_menu {
     display: block;
+    z-index: 2;
 }
 
 .lista_menu_titulo,
@@ -107,6 +108,7 @@
     .opções_item {
         padding: 0 1em;
         text-transform: uppercase;
+        cursor: pointer;
     }
 
     .opções_link {
@@ -146,6 +148,10 @@
     .lista_menu_item:hover > .lista_menu_link {
         -webkit-text-fill-color: var(--branco);
         text-decoration: none;
+    }
+
+    .lista_menu {
+        z-index: 2;
     }
 }
 
